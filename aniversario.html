@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feliz Aniversario 💖</title>
+    <meta name="theme-color" content="#ff6b9a" />
+    <link rel="stylesheet" href="aniversario.css" />
+  </head>
+  <body>
+    <!-- Lluvia de corazones -->
+<div class="hearts-container" aria-hidden="true"></div>
+
+    <!-- ============== INTRO FULLSCREEN ============== -->
+    <section class="intro" id="intro" aria-label="Pantalla de bienvenida">
+      <div class="intro-inner">
+        <div class="heart-shape" aria-hidden="true"></div>
+        <h1 class="intro-title">Feliz Aniversario #3<br /><span>Amor</span></h1>
+        <button
+          class="btn intro-btn"
+          id="enterBtn"
+          aria-label="Entrar a la sorpresa"
+        >
+          Entrar ✨
+        </button>
+      </div>
+    </section>
+
+    <!-- ============== CONTENIDO PRINCIPAL ============== -->
+    <main id="main" class="is-hidden" aria-live="polite">
+      <!-- HERO con video de fondo -->
+<header class="hero">
+  <!-- Fondo de video -->
+  <div class="hero-video" aria-hidden="true">
+    <video id="heroVideo" playsinline autoplay muted loop poster="img/hero-poster.jpg">
+      <!-- Tú pones el archivo: cambia la ruta a tu video -->
+      <source data-src="video/aniversario.mp4" type="video/mp4" />
+      <!-- opcional: webm
+      <source data-src="video/hero.webm" type="video/webm" />
+      -->
+    </video>
+  </div>
+
+  <!-- Contenido encima del video -->
+  <div class="container">
+    <div class="chip">
+      🎉 Aniversario <strong style="margin-left: 0.35rem">3 años</strong>
+    </div>
+    <h1 class="title">
+      <span id="names">Sheryll y Gabriel</span>
+      <span class="heart-emoji">💘</span>
+    </h1>
+    <p class="subtitle">
+      
+      <span class="countdown" id="togetherDays">0000</span> días juntos y los que faltan...
+    </p>
+    <div class="cta-row">
+      
+      </button>
+      <a class="btn ghost" href="#galeria">Ver fotos</a>
+    </div>
+  </div>
+</header>
+
+
+      <div class="container">
+        <!-- GALERÍA -->
+        <section id="galeria">
+  <h2>Galería de momentos</h2>
+  <p class="lead">Cada foto, un pedacito de nuestra historia 💞</p>
+
+  <div class="gallery">
+    <!-- 🔽 Copia y escribe tus mensajes en cada <p> -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="img/foto1.jpg" alt="Momento 1" loading="lazy">
+        </div>
+        <div class="flip-back">
+          <p>De las primeras visitas que te hice jeje y ya nos tomábamos fotos locas, Mis patillas se que te gustaban. NO LO NIEGES</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="img/foto2.jpg" alt="Momento 2" loading="lazy">
+        </div>
+        <div class="flip-back">
+          <p>Primera fotito dandote besito en el cachete</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="img/foto3.jpg" alt="Momento 3" loading="lazy">
+        </div>
+        <div class="flip-back">
+          <p>Ida a Burguer King despues de la universidad, desde el principio estabas destinada a ser mi reina</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🔁 Repite con tus 32 imágenes -->
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto4.jpg" alt="Momento 4" loading="lazy"></div><div class="flip-back"><p>Quien diria que me pedirias que te llevara a pescar en la quebrada</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto5.jpg" alt="Momento 5" loading="lazy"></div><div class="flip-back"><p>Fotito antes de salir al cumpleaños de Ayla</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto6.jpg" alt="Momento 6" loading="lazy"></div><div class="flip-back"><p>Siempre mirandote con ojos de amor</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto7.jpg" alt="Momento 7" loading="lazy"></div><div class="flip-back"><p>Primera ida a Gretta y no llevamos nuestro candadito, tenemos que ir denuevo y poner el nuesto</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto8.jpg" alt="Momento 8" loading="lazy"></div><div class="flip-back"><p>No matamos ni una mosca, ese dia disfrute mucho riendome de debrah jajaja y conoci a samuel... Recuerdas lo que hicimos ese dia en la coocina? jejeje</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto9.jpg" alt="Momento 9" loading="lazy"></div><div class="flip-back"><p>Primera Fotito con nuestra hija perruna, siempre tan linda</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto10.jpg" alt="Momento 10" loading="lazy"></div><div class="flip-back"><p>El ramo que ha llevado mas amor ese,que ilusion la mia buscando las florecitas con Andres</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto11.jpg" alt="Momento 11" loading="lazy"></div><div class="flip-back"><p>Navidad en casa de Curry cuando te regale tu Camarita</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto12.jpg" alt="Momento 12" loading="lazy"></div><div class="flip-back"><p>Salida al Golfo de Chiriqui, nos tomamos fotitas bonitas y disfrutamos mucho</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto13.jpg" alt="Momento 13" loading="lazy"></div><div class="flip-back"><p>Que bello lugar, el mejor trip que hemos hecho</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto14.jpg" alt="Momento 14" loading="lazy"></div><div class="flip-back"><p>En la embarcacion del suegro jejeje</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto15.jpg" alt="Momento 15" loading="lazy"></div><div class="flip-back"><p>Otra salida a la playa, estabamos peleados ese dia pero siempre nos hemos arreglado</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto16.jpg" alt="Momento 16" loading="lazy"></div><div class="flip-back"><p>Solo quise ponerla porque tu estabsa dormida y mis ojos estaban rojos. FOTO RANDOM</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto17.jpg" alt="Momento 17" loading="lazy"></div><div class="flip-back"><p>Salidita a Picnic en Boquete</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto18.jpg" alt="Momento 18" loading="lazy"></div><div class="flip-back"><p>Fotito Romantica, yo con pena porque habia gente alredor</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto19.jpg" alt="Momento 19" loading="lazy"></div><div class="flip-back"><p>Compartiendo tus gustos y esa fue la primera vez que fui a una discoteca, me lo pase bien</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto20.jpg" alt="Momento 20" loading="lazy"></div><div class="flip-back"><p>Salidita con el suetercito que me regalaste. Novio Orgulloso</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto21.jpg" alt="Momento 21" loading="lazy"></div><div class="flip-back"><p>Esa es la cara que tienes siempre cuando sabes que viene la comidita</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto22.jpg" alt="Momento 22" loading="lazy"></div><div class="flip-back"><p>Billarsito leve, siempre gano yo jeje</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto23.jpg" alt="Momento 23" loading="lazy"></div><div class="flip-back"><p>De mis fotos favoritas</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto24.jpg" alt="Momento 24" loading="lazy"></div><div class="flip-back"><p>Viendo a la gente de las canoas esas y comiendo raspao con mi familia</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto25.jpg" alt="Momento 25" loading="lazy"></div><div class="flip-back"><p>Foto RANDOM pero siempre que la veo me da risa, quien te viera jajaja/p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto26.jpg" alt="Momento 26" loading="lazy"></div><div class="flip-back"><p>Viendo la decoracion de navidad del parque del mejor distrito de Chiriqui SIUUUU</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto27.jpg" alt="Momento 27" loading="lazy"></div><div class="flip-back"><p>Celebrando tu cumpleaños en nuestro restaurante favorito</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto28.jpg" alt="Momento 28" loading="lazy"></div><div class="flip-back"><p>Dia en Boquete</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto29.jpg" alt="Momento 29" loading="lazy"></div><div class="flip-back"><p>Siempre presente en cada paso que des, apoyandote siempre y sientodome orgulloso de tenerte</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto30.jpg" alt="Momento 30" loading="lazy"></div><div class="flip-back"><p>Caminata en fanlyc boquete</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto31.jpg" alt="Momento 31" loading="lazy"></div><div class="flip-back"><p>Vueltita por la playita y besito</p></div></div></div>
+    <div class="flip-card"><div class="flip-inner"><div class="flip-front"><img src="img/foto32.jpg" alt="Momento 32" loading="lazy"></div><div class="flip-back"><p>Siempre Amandonos a nuestra manera sin dejar de ser nosotros mismos. GRACIAS POR ESTOS 3 AÑOS</p></div></div></div>
+  </div>
+</section>
+
+
+        <div class="divider"></div>
+
+       <!-- CARTA -->
+<section id="carta">
+  <h2>Una carta para ti</h2>
+
+  <div class="letter-wrapper">
+    <!-- 💌 El sobre cerrado -->
+    <div class="envelope" id="envelope">
+      <div class="flap"></div>
+      <div class="front"></div>
+      <div class="heart">💌</div>
+    </div>
+
+    <!-- 📜 Contenido de la carta (oculto al inicio) -->
+    <div class="letter-content" id="letterContent">
+      <p>
+        No soy de escribir cartas, de hecho esta es la primera que te escribo, pero supongo que me siento mejor haciéndolo desde un teclado frente a una computadora. 
+        Quería aprovechar este día tan especial para expresarte mi agradecimiento y todo lo que siento por ti.
+        
+        Primero que nada. Quiero agradecer a Dios por haberte puesto en mi camino. Eres una persona increíble y cada día me siento más afortunado de tenerte a mi lado.
+        Tu amor, tu apoyo y tu comprensión significan el mundo para mí.
+        Tres años juntos y seguiria eligiendote cada dia de mi vida. 
+        Me has enseñado tanto sobre el amor verdadero, la paciencia SOBRE TODO LA PACIENCIA JAJAJA y la importancia de estar ahí el uno para el otro.
+        Nunca pense que alguien como yo tendria a una persona tan maravillosa a su lado. 
+        Estos tres años han sido muy felices para mi y es que Sheryll tu me encantas, se que soy un poco sonso y terco aveces pero siempre lo que hago lo hago con el corazon
+
+
+        Prometo seguir tomándote de la mano en los días buenos y en los no tan buenos.
+        Prometo más aventuras, más fotos feas, más comidas ricas.  
+        Aun nos queda un mundo por descubrir y sueños por cumplir pero espero que siempre sea de la mano contigo.
+        Le pido a Dios que nos permitar seguir teniendo muchos aniversiarios mas y que podamos seguir creciendo juntos.
+        
+        Te amo hoy y todos los días.  
+
+        !FELIZ ANIVERSARIO #3 MI PRINCESA!
+
+        <br><br>— Gabriel 💗
+      </p>
+    </div>
+  </div>
+</section>
+
+        <div class="divider"></div>
+
+        <!-- MÚSICA -->
+        <section id="playlist">
+          <h2>Nuestra música</h2>
+          <p class="lead">Canciones que suenan a nosotros.</p>
+          <div class="card pad" style="overflow: hidden">
+            <iframe
+              style="border-radius: 12px"
+              src=""
+              width="100%"
+              height="352"
+              frameborder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- MENSAJITO -->
+<section id="mensaje">
+  <h2>Envíame un mensajito 💬</h2>
+  <p class="lead">Escríbeme algo bonito, amor 💌</p>
+
+  <form id="whatsappForm" class="card pad center">
+    <textarea
+      id="mensajeTexto"
+      rows="4"
+      placeholder="Escribe aquí tu mensaje..."
+      required
+    ></textarea>
+    <br />
+    <button type="submit" class="btn">Enviar por WhatsApp 💚</button>
+  </form>
+</section>
+
+<div class="divider"></div>
+
+        <!-- CTA FINAL -->
+        <section id="cta">
+          <div class="card pad center">
+            <p class="lead">
+              ¿Aceptas seguir escribiendo esta historia conmigo?
+            </p>
+            <button class="btn" id="btnSi">Sí, mil veces sí 💍</button>
+            <p class="pill">
+              Si dices que sí… tengo un postre con tu nombre 😏
+            </p>
+          </div>
+        </section>
+
+        <footer>
+          Hecho con amor por <strong id="yourNameFooter">[Tu Nombre]</strong>
+          <span id="year">2025</span>
+        </footer>
+      </div>
+
+    <script src="aniversario.js" defer></script>
+  </body>
+</html>
